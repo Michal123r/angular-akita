@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProductsModule } from './products/products.module';
 import { AppQuery, AppStore } from './services/states/app.state';
 import { ProductsQuery, ProductsStore } from './services/states/products.state';
 
@@ -12,7 +13,8 @@ import { ProductsQuery, ProductsStore } from './services/states/products.state';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProductsModule
   ],
   providers: [
     AppQuery,
