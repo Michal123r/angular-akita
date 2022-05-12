@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppQuery } from './services/states/app.state';
+import { ProductsQuery } from './services/states/products.state';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import { AppQuery } from './services/states/app.state';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  public $isRTL = this.state.select(s => s.isRTL);
-  
-  public constructor(private state: AppQuery) {
+  public $products = this.state.select(s => s.productsList);
+
+  public constructor(private state: ProductsQuery) {
     
   }
 }

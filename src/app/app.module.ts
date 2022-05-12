@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppQuery, AppStore } from './services/states/app.state';
+import { ProductsQuery, ProductsStore } from './services/states/products.state';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { AppQuery, AppStore } from './services/states/app.state';
   ],
   providers: [
     AppQuery,
-    AppStore
+    AppStore,
+    ProductsQuery,
+    ProductsStore
+
   ],
   bootstrap: [AppComponent]
 })
