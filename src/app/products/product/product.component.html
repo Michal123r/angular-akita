@@ -1,0 +1,11 @@
+<div class="book" *ngIf="product">
+    <div class="title">
+      {{product.title}}
+    </div>
+  
+    <div class="img">
+      <img [src]="product.previewImgUrl">
+    </div>
+  
+    <button (click)="addToCart(product.id)">Add to cart</button>
+  </div>

@@ -1,6 +1,7 @@
 export interface Product {
     title: string;
     previewImgUrl: string;
+    id: number;
   }
   
   export interface BookResponse {
